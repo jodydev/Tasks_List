@@ -18,7 +18,7 @@ function ListForm({ addTask }) {
 
   
   return (
-    <div className="container p-5">
+    <div className="container p-0 p-lg-5">
       <div className="row my-5">
         <div className="col-12 d-flex justify-content-center aling-items-center">
           <div className="row">

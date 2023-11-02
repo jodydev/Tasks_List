@@ -155,10 +155,20 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar className='nav-bg' position="static">
+      <AppBar className='nav-bg navbar-expand-lg' position="static">
         <Toolbar >
 
-          <div className="col-4"></div>
+          <div className="container d-flex justify-content-start align-items-center d-block d-lg-none">
+              <a className="navbar-brand " href="#">
+                REACT TASKS LIST
+              <IconReact />
+              </a>
+       
+          </div>
+
+         
+
+          <div className="col-4 d-none d-lg-block"></div>
 
           <div className="col-4 d-flex justify-content-center">
             <Typography 
@@ -172,15 +182,13 @@ export default function PrimarySearchAppBar() {
              
               REACT TASKS LIST
 
-              <IconReact 
-              
-              />
+              <IconReact />
 
             </Typography>
           </div>
 
-          <div className="col-4 d-flex justify-content-end">
-            <Search className='w-50 slide-in-blurred-top'>
+          <div className="col-4 d-flex justify-content-end d-none">
+            <Search className='w-50 slide-in-blurred-top d-none d-lg-block'>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>

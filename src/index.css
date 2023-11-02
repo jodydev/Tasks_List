@@ -138,7 +138,7 @@ margin-top: 1px;
   background-color: #1d2125 !important;
 }
 
-body{
+#root{
   background-image: url(https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-80052.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;

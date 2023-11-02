@@ -9,14 +9,22 @@ function TodoList({ tasks, removeTask, doneTask}) {
 
   return (
     <div className="container">
-      <div className="row ">
-        <div className="col-6 d-flex justify-content-end align-items-center">
+      <div className="row">
+
+      <div className="col-lg-6 col-sm-12 my-5 d-flex justify-content-end align-items-center">
           <div className="box container-list my-5 mx-5 rounded-4 slide-in-blurred-left">
             <h1 className="mx-3 py-3 fs-6 text-light">Da fare</h1>
             <div className="box p-1">
               {tasks.length === 0 ? (
                 <div className="item rounded-3 my-3 mx-2">
-                  <p className="text-light fw-semibold p-3 fs-6">Nessun Task Presente</p>
+                  <div className="container">
+                    <div className="row">
+                    <div className="col-12 p-0">
+                    <p className="p-3 d-flex justify-content-start align-items-center text-light my-2 ">Nessun Task Presente</p>
+                  </div>
+                    </div>
+                  </div>
+                 
                 </div>
               ) : (
                 tasks.map((task) => (
@@ -53,16 +61,11 @@ function TodoList({ tasks, removeTask, doneTask}) {
 
         
 
-        <div className="col-6 d-flex justify-content-start align-items-center">
+        <div className="col-lg-6 col-sm-12 d-flex justify-content-start align-items-center my-5">
           
           <CompletedTask tasks={tasks} />
 
         </div> 
-
-
-      
-
-
 
 
       </div>
@@ -71,6 +74,8 @@ function TodoList({ tasks, removeTask, doneTask}) {
 }
 
 export default TodoList;
+
+
 
 
 
