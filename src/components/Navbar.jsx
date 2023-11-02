@@ -159,7 +159,7 @@ export default function PrimarySearchAppBar() {
         <Toolbar >
 
           <div className="container d-flex justify-content-start align-items-center d-block d-lg-none">
-              <a className="navbar-brand " href="#">
+              <a className="navbar-brand fw-semibold fs-4 my-3" href="#">
                 REACT TASKS LIST
               <IconReact />
               </a>
