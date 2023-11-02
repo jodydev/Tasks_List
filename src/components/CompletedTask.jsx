@@ -22,7 +22,7 @@ function CompletedTask({ tasks }) {
             </div>
           </div>
         ) : (
-          completedTasks.map((task) => (
+          completedTasks.map((task-2) => (
             <div className="item rounded-3 my-3 mx-2" key={task.id}>
               <div className="container">
                 <div className="row">
